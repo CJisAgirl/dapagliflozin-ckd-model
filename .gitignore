@@ -1,0 +1,14 @@
+data/
+.venv/
+.Rlib/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+.Rhistory
+.RData
+*.sqlite
+*.sqlite3
+*.zip
+results/quick/

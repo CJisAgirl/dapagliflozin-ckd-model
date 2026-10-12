@@ -1,0 +1,27 @@
+{
+  "dapa": {
+    "medical": 228398.20071005306,
+    "drug": 13467.161950105925,
+    "qaly": 4.893822573008217,
+    "ly": 6.423393689141565,
+    "cost": 241865.36266015898,
+    "treatment_months_discounted": 73.14782140882541,
+    "survival_end": 0.4392664755627756
+  },
+  "control": {
+    "medical": 235841.03555024342,
+    "drug": 0.0,
+    "qaly": 4.7508722475238745,
+    "ly": 6.266024358745386,
+    "cost": 235841.03555024342,
+    "treatment_months_discounted": 0.0,
+    "survival_end": 0.3957146965579343
+  },
+  "delta_cost": 6024.327109915554,
+  "delta_qaly": 0.1429503254843425,
+  "delta_ly": 0.15736933039617895,
+  "icer": 42142.800931050726,
+  "classification": "more effective, more costly",
+  "nmb_at_100k": 8270.705438518697,
+  "daily_price_threshold_at_100k": 9.77021049994626
+}

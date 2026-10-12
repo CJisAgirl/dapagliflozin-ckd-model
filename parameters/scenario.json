@@ -1,0 +1,106 @@
+{
+  "status": "exploratory_scenario_not_validated_T2D_Medicare_CEA",
+  "states": [
+    "G1",
+    "G2",
+    "G3a",
+    "G3b",
+    "G4",
+    "G5",
+    "Dialysis",
+    "Transplant"
+  ],
+  "initial": [
+    0,
+    0.1,
+    0.3,
+    0.45,
+    0.15,
+    0,
+    0,
+    0
+  ],
+  "age": 65,
+  "horizon_years": 10,
+  "discount": 0.03,
+  "early_months": 4,
+  "annual_mortality_hazard_at65": [
+    0.02,
+    0.02,
+    0.03,
+    0.045,
+    0.07,
+    0.12,
+    0.18,
+    0.05
+  ],
+  "mortality_age_doubling_years": 10,
+  "annual_background_cost_2023": [
+    30908,
+    30908,
+    34513,
+    34513,
+    46557,
+    46557,
+    100000,
+    44645
+  ],
+  "background_drug_share": 0.2,
+  "annual_inflation_2023_2026": 0.03,
+  "utilities": [
+    0.77,
+    0.77,
+    0.77,
+    0.77,
+    0.76,
+    0.73,
+    0.68,
+    0.71
+  ],
+  "daily_drug_price": 6.052894,
+  "annual_discontinuation": 0,
+  "effect_retention": 1,
+  "effect_end_month": 1200,
+  "drug_end_month": 1200,
+  "renal_speed": 1,
+  "rounding": "normalize",
+  "mortality_scale": 1,
+  "cost_scale": 1,
+  "utility_shift": 0,
+  "extra_annual_treatment_cost": 0,
+  "annual_treatment_disutility": 0,
+  "bia": {
+    "members": 100000,
+    "eligible_initial": 1000,
+    "monthly_new_eligible": 20,
+    "annual_disenrollment": 0.05,
+    "initial_treated_fraction": 0.2,
+    "current_targets": [
+      0.2,
+      0.2,
+      0.2
+    ],
+    "expanded_targets": [
+      0.3,
+      0.45,
+      0.6
+    ],
+    "annual_discontinuation": 0.1,
+    "drug_payment_share": 1,
+    "medical_payment_share": 1,
+    "g4_start_eligible_fraction": 0.3333333333333333
+  },
+  "assumptions": {
+    "initial": "Design mix, not extracted trial or Medicare distribution. Baseline G4 represents eGFR25-29, G2 represents60-75; subsequent stage states do not retain within-stage eligibility.",
+    "mortality": "Hypothetical common stage hazards and Gompertz age increase, not estimated from trial or USRDS. No direct mortality treatment HR. Lifetime sensitivity only.",
+    "costs": "USRDS2025 CKD6 Table6.3 diabetes Yes, age66+, 2023 PartsA/B/D: stages1-2 30908,3 34513,4-5 46557. Mapping grouped stages to individual states is assumed. Dialysis100000 is a scenario assumption, NOT a USRDS point estimate. Transplant44645 from ESRD9 Fig9.11d is average annual prevalent cost, not first-year cost.",
+    "cost_conversion": "Remove an assumed20% prescription share from all source total costs to construct background medical proxies; use assumed3% inflation annually for3years. Not a measured2026 price index. Add only intervention drug cost; common background pharmacy cost excluded. Not comprehensive US healthcare-sector spending.",
+    "utility": "CKJ2024 Table2 UK tariff values transferred as a scenario; not a US/T2D valuation.",
+    "transitions": "Published mixed-population high-UACR matrices reused conditionally, no T2D-specific calibration. Normalize rounded rows; early cycles0-3 then late. KRT rows follow published source.",
+    "discontinuation": "Reference retains source arm contrast and charges full daily exposure while pre-KRT. Additional dropout scenarios are hypothetical policy deviations: switch to comparator transitions after stop. They are NOT fitted on-treatment effects or estimates of trial adherence.",
+    "events": "HF and adverse-event effects not separately modeled. Background medical proxies already include events; no extra event savings. Treatment-burden sensitivity tests add explicit hypothetical cost/QALY penalties.",
+    "transplant": "Single average prevalent transplant state; no incident transplant operation cost added to avoid overlap. First-year/maintenance distinction unresolved and tested via cost scenarios.",
+    "bia": "Illustrative100000-member fixed-size plan,1000initial eligible and20new eligible/month, no empirical prevalence claim. Entrants are treatment-naive age65; original cohort age increases. Annual targets apply monthly among pre-KRT members; only never-treated G2-G4 can initiate, so target may be unattainable. Off-treatment never restarts. Existing users begin in late phase.5% annual exits;10% stop. Shares1 mean gross modeled components, not actual net Medicare liability. G4 new-start eligibility uses an assumed one-third fraction because the stage cannot distinguish eGFR15-24 from25-29; this is not a lab-verified rule. BIA uses late renal matrices for all members, including new starts, as a prevalent-population steady-response approximation; early dynamics are modeled only in CEA.",
+    "psa": "Scenario PSA, not empirical posterior: common lognormal cost CV20%, mortality CV30%, common utility shift SD.03, Uniform(.5,1.5) drug price and Uniform(0,1) retention of arm contrast. Renal matrices fixed; no inferred covariance from rounded marginal SEs. Report conditional acceptability, not certainty of value."
+  }
+}

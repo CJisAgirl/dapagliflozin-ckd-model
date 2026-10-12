@@ -1,0 +1,39 @@
+{
+  "review_date": "2026-10-11",
+  "extraction": "Manual transcription of rendered official table/text; original webpage bytes not archived or hash verified.",
+  "ckd": {
+    "url": "https://usrds-adr.niddk.nih.gov/2025/chronic-kidney-disease/6-healthcare-expenditures-for-persons-with-ckd#table-6-3-section",
+    "table": "6.3",
+    "row": "Diabetes: Yes",
+    "population": "Medicare FFS older adults age66+, established CKD; DM not restricted to T2D",
+    "data_year": 2023,
+    "currency_year": 2023,
+    "unit": "USD per person-year, Parts A/B/D",
+    "values": {
+      "stages_1_2": 30908,
+      "stage_3": 34513,
+      "stages_4_5": 46557
+    },
+    "all_ckd_dm": 35089
+  },
+  "transplant": {
+    "url": "https://usrds-adr.niddk.nih.gov/2025/end-stage-renal-disease/9-healthcare-expenditures-for-persons-with-esrd#figure-9-11d-section",
+    "figure": "9.11d explanatory paragraph",
+    "data_year": 2023,
+    "currency_year": 2023,
+    "value": 44645,
+    "unit": "annual per-person prevalent Medicare FFS transplant spending",
+    "population": "All reported transplant beneficiaries, not T2D-specific"
+  },
+  "dialysis": {
+    "status": "assumption_only",
+    "value": 100000,
+    "currency_year": 2023,
+    "not_a_source_estimate": true
+  },
+  "transformations": [
+    "CKD1/2 share combined stage1-2 cost;3a/3b share3;4/5 share4-5.",
+    "Uniform20% assumed pharmacy subtraction;3% assumed annual inflation for3years.",
+    "Same transformation for dialysis assumption and transplant observation; no additional transplant operation charge."
+  ]
+}

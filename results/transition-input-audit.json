@@ -1,0 +1,237 @@
+{
+  "status": "source_transcription_checked_not_clinical_model_validation",
+  "matrices": 4,
+  "probability_cells": 256,
+  "se_cells": 256,
+  "rows": 32,
+  "nonunit_rows_as_printed": 10,
+  "max_absolute_row_sum_deviation": "0.002",
+  "rounding_bound": "0.004",
+  "normalization_applied": false,
+  "row_checks": [
+    {
+      "table": "Table S3",
+      "phase": "Months 0-4",
+      "from_state": "CKD 1",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S3",
+      "phase": "Months 0-4",
+      "from_state": "CKD 2",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S3",
+      "phase": "Months 0-4",
+      "from_state": "CKD 3a",
+      "sum_as_printed": "0.999",
+      "deviation_from_one": "-0.001"
+    },
+    {
+      "table": "Table S3",
+      "phase": "Months 0-4",
+      "from_state": "CKD 3b",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S3",
+      "phase": "Months 0-4",
+      "from_state": "CKD 4",
+      "sum_as_printed": "1.002",
+      "deviation_from_one": "0.002"
+    },
+    {
+      "table": "Table S3",
+      "phase": "Months 0-4",
+      "from_state": "CKD 5",
+      "sum_as_printed": "0.999",
+      "deviation_from_one": "-0.001"
+    },
+    {
+      "table": "Table S3",
+      "phase": "Months 0-4",
+      "from_state": "Dialysis",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S3",
+      "phase": "Months 0-4",
+      "from_state": "Kidney transplant",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S3",
+      "phase": "Months 5 and onwards",
+      "from_state": "CKD 1",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S3",
+      "phase": "Months 5 and onwards",
+      "from_state": "CKD 2",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S3",
+      "phase": "Months 5 and onwards",
+      "from_state": "CKD 3a",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S3",
+      "phase": "Months 5 and onwards",
+      "from_state": "CKD 3b",
+      "sum_as_printed": "0.999",
+      "deviation_from_one": "-0.001"
+    },
+    {
+      "table": "Table S3",
+      "phase": "Months 5 and onwards",
+      "from_state": "CKD 4",
+      "sum_as_printed": "0.999",
+      "deviation_from_one": "-0.001"
+    },
+    {
+      "table": "Table S3",
+      "phase": "Months 5 and onwards",
+      "from_state": "CKD 5",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S3",
+      "phase": "Months 5 and onwards",
+      "from_state": "Dialysis",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S3",
+      "phase": "Months 5 and onwards",
+      "from_state": "Kidney transplant",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S4",
+      "phase": "Months 0-4",
+      "from_state": "CKD 1",
+      "sum_as_printed": "0.999",
+      "deviation_from_one": "-0.001"
+    },
+    {
+      "table": "Table S4",
+      "phase": "Months 0-4",
+      "from_state": "CKD 2",
+      "sum_as_printed": "0.999",
+      "deviation_from_one": "-0.001"
+    },
+    {
+      "table": "Table S4",
+      "phase": "Months 0-4",
+      "from_state": "CKD 3a",
+      "sum_as_printed": "0.999",
+      "deviation_from_one": "-0.001"
+    },
+    {
+      "table": "Table S4",
+      "phase": "Months 0-4",
+      "from_state": "CKD 3b",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S4",
+      "phase": "Months 0-4",
+      "from_state": "CKD 4",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S4",
+      "phase": "Months 0-4",
+      "from_state": "CKD 5",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S4",
+      "phase": "Months 0-4",
+      "from_state": "Dialysis",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S4",
+      "phase": "Months 0-4",
+      "from_state": "Kidney transplant",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S4",
+      "phase": "Months 5 and onwards",
+      "from_state": "CKD 1",
+      "sum_as_printed": "1.001",
+      "deviation_from_one": "0.001"
+    },
+    {
+      "table": "Table S4",
+      "phase": "Months 5 and onwards",
+      "from_state": "CKD 2",
+      "sum_as_printed": "1.001",
+      "deviation_from_one": "0.001"
+    },
+    {
+      "table": "Table S4",
+      "phase": "Months 5 and onwards",
+      "from_state": "CKD 3a",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S4",
+      "phase": "Months 5 and onwards",
+      "from_state": "CKD 3b",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S4",
+      "phase": "Months 5 and onwards",
+      "from_state": "CKD 4",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S4",
+      "phase": "Months 5 and onwards",
+      "from_state": "CKD 5",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S4",
+      "phase": "Months 5 and onwards",
+      "from_state": "Dialysis",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    },
+    {
+      "table": "Table S4",
+      "phase": "Months 5 and onwards",
+      "from_state": "Kidney transplant",
+      "sum_as_printed": "1.000",
+      "deviation_from_one": "0.000"
+    }
+  ]
+}

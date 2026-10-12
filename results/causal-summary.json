@@ -1,0 +1,57 @@
+[
+  {
+    "scenario": "measured_confounding",
+    "repetitions": 200,
+    "n_per_replicate": 2500,
+    "bootstrap_per_replicate": 100,
+    "identified_runs": 200,
+    "bias": -0.0018835066288304474,
+    "bias_mcse": 0.0010643076237121542,
+    "crude_bias": 0.030774369365235445,
+    "rmse": 0.015131589145933051,
+    "coverage": 0.94,
+    "valid_intervals": 200,
+    "interval_failure_fraction": 0.0,
+    "coverage_mcse": 0.01679285562374667,
+    "mean_truth": -0.03360050470696443
+  },
+  {
+    "scenario": "informative_censoring",
+    "repetitions": 200,
+    "n_per_replicate": 2500,
+    "bootstrap_per_replicate": 100,
+    "identified_runs": 200,
+    "bias": 0.0024750966855167605,
+    "bias_mcse": 0.0013891664393009971,
+    "crude_bias": 0.017751724089647182,
+    "rmse": 0.019752290991746198,
+    "coverage": 0.9698492462311558,
+    "valid_intervals": 199,
+    "interval_failure_fraction": 0.0050000000000000044,
+    "coverage_mcse": 0.012122010757464882,
+    "mean_truth": -0.03360212509957965
+  },
+  {
+    "scenario": "unmeasured_confounding",
+    "repetitions": 200,
+    "n_per_replicate": 2500,
+    "bootstrap_per_replicate": 100,
+    "identified_runs": 200,
+    "bias": 0.03783938780875312,
+    "bias_mcse": 0.0018118988986488686,
+    "crude_bias": 0.042972040311847766,
+    "rmse": 0.04566324359818612,
+    "coverage": 0.5947368421052631,
+    "valid_intervals": 190,
+    "interval_failure_fraction": 0.050000000000000044,
+    "coverage_mcse": 0.035616741387924984,
+    "mean_truth": -0.0425164221125175
+  },
+  {
+    "scenario": "positivity_failure",
+    "repetitions": 200,
+    "n_per_replicate": 2500,
+    "bootstrap_per_replicate": 100,
+    "identified_runs": 0
+  }
+]

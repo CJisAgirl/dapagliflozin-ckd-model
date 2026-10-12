@@ -1,0 +1,77 @@
+{
+  "label": "SYNTHETIC METHOD DEMONSTRATION",
+  "n": 4000,
+  "excluded_decoys": 20,
+  "truth": {
+    "risk_control": 0.14532406063569384,
+    "risk_dapa": 0.11189953666452801,
+    "risk_difference": -0.03342452397116581,
+    "definition": "Synthetic 12-month renal cumulative incidence, death competing. Artificial hazards, not evidence for either drug."
+  },
+  "iptw_ipcw": {
+    "identified": true,
+    "risk_control": 0.11164085493246295,
+    "risk_dapa": 0.11269931896451191,
+    "rd": 0.0010584640320489558,
+    "crude_rd": 0.00015210282150733556,
+    "propensity_min": 0.30491803278688523,
+    "propensity_max": 0.8541666666666666,
+    "max_weight": 6.857142857142855,
+    "min_censor_survival": 0.11215665478461515,
+    "effective_n": [
+      1594.125064460425,
+      1805.97459205365
+    ],
+    "smd_before": [
+      0.26266202002679606,
+      0.6489857016633656,
+      0.29178097528157093
+    ],
+    "smd_after": [
+      -8.448005362709164e-15,
+      -2.514947267537923e-15,
+      8.500235588234319e-16
+    ],
+    "bootstrap_se": 0.013510414923090847,
+    "ci_low": -0.025421949217209104,
+    "ci_high": 0.027538877281307016,
+    "bootstrap_valid": 300,
+    "interval_valid": true
+  },
+  "iptw_without_ipcw": {
+    "identified": true,
+    "risk_control": 0.0804752537123202,
+    "risk_dapa": 0.07231929833468978,
+    "rd": -0.00815595537763042,
+    "crude_rd": 0.00015210282150733556,
+    "propensity_min": 0.30491803278688523,
+    "propensity_max": 0.8541666666666666,
+    "max_weight": 6.857142857142855,
+    "min_censor_survival": 1.0,
+    "effective_n": [
+      1594.125064460425,
+      1805.97459205365
+    ],
+    "smd_before": [
+      0.26266202002679606,
+      0.6489857016633656,
+      0.29178097528157093
+    ],
+    "smd_after": [
+      -8.448005362709164e-15,
+      -2.514947267537923e-15,
+      8.500235588234319e-16
+    ],
+    "bootstrap_se": 0.009108497504642753,
+    "ci_low": -0.026008610486730217,
+    "ci_high": 0.009696699731469378,
+    "bootstrap_valid": 100,
+    "interval_valid": true
+  },
+  "counts": {
+    "3": 1929,
+    "0": 1530,
+    "1": 296,
+    "2": 245
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "status": "verified_price_component_only_not_CEA_or_BIA_results",
+  "verified_on": "2026-10-11",
+  "source_url": "https://www.cms.gov/files/zip/selected-drug-list-negotiated-prices-also-known-maximum-fair-prices-statutezip.zip",
+  "archive_sha256": "6fa6b047bd20b0dc3dc8c8aa554a2c133aa95511efaa021dc7a669ea109d0ed1",
+  "csv_name": "CMS_Negotiation_Program_Selected_Drug_List_and_Maximum_Fair_Price_Data_File_20260921.csv",
+  "csv_sha256": "2cb50b9ed03b1362cdd4a9623d51a5b1bea73e204bf463412ee9ac0392ae2455",
+  "selection_date": "2026-10-11",
+  "selected_raw_row": {
+    "IPAY": "2026",
+    "Selected Drug Name": "FARXIGA",
+    "Active Ingredient Name or Active Moiety Name": "DAPAGLIFLOZIN",
+    "NDC-9": "00310-6210",
+    "NDC-11": "00310-6210-30",
+    "XREF NDC-11": "",
+    "HCPCS Code": "",
+    "MFP Effective Date": "01/01/2026",
+    "MFP End Date": "12/31/2026",
+    "Single MFP per 30 DES": "178.5",
+    "NDC-9 MFP per Unit Price": "6.052894",
+    "HCPCS Code Dosage Price": "",
+    "As of Date": "08/15/2024",
+    "Type of Update": "End Date",
+    "Remarks": "Added for IPAY 2026 announcement. End dated to reflect inflation adjustment"
+  },
+  "dose_mapping": {
+    "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72ad22ae-efe6-4cd6-a302-98aaee423d69",
+    "label_updated": "2026-06-03",
+    "location": "Table 18; 10 mg tablets, bottles of 30",
+    "label_ndc": "0310-6210-30",
+    "cms_ndc11": "00310-6210-30",
+    "ndc9": "00310-6210",
+    "tablets_per_day": 1,
+    "dose_mg_per_day": 10,
+    "mapping_method": "Manual label verification; five-digit CMS labeler padding"
+  },
+  "arithmetic_scenarios_usd": {
+    "per_tablet": "6.052894",
+    "30_tablets": "181.586820",
+    "365_tablets": "2209.306310",
+    "reported_single_mfp_per_30_des": "178.5"
+  },
+  "assumptions": [
+    "One 10 mg tablet daily; 365-day arithmetic assumes no interruption.",
+    "MFP-based drug component, not actual net plan payment or patient out-of-pocket.",
+    "Fees, rebates, payment allocation and non-drug care are not included.",
+    "The 30-day-equivalent field is distinct from 30 tablets at the NDC unit price.",
+    "Effective dates select the price year; IPAY alone does not."
+  ]
+}

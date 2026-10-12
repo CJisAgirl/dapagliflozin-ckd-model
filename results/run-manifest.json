@@ -1,0 +1,55 @@
+{
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "input_sha256": {
+    "parameters/ckd-transitions-source.json": "12017727b3e158dbab5bdeb5a7eb000b3626ffa0a32bad3dac74bf0b3383c642",
+    "parameters/cms-price-evidence.json": "a33f43d08b3f4752aed5c8560a483124a91e1a130806165b51d3e5a069200789",
+    "parameters/computational-reference.json": "323cb47aa5a9966d1b2637dd8d148baaed5aaac6ff1b0760bf94d6c7c4992a0d",
+    "parameters/scenario.json": "be4835d78a5c7b0107858ad166b976594e9527ae3c1ab95be41ae7f1175c2337",
+    "parameters/us-cost-source.json": "2495e168b626df83d92cb630a6bacdddf90d018db0f59ea244b7ae23a18b9a92"
+  },
+  "code_sha256": {
+    "model/claims.py": "c94ba7872d581ae3ec75575e564ab6037a7e7ce4fc01cc7aada3e62278e84d03",
+    "model/economics.py": "70c82c165a109942ea60fe3903f8528b7b6c652716a831d932a6d73988bc394e",
+    "model/reporting.py": "d8c290d52e3dd6cfc50c20d0ae60e87e93124d23f2c87936de141e9f5f9b6fe6",
+    "run.py": "760cfcedf17f6f77c0430ab7b98a735e4d73953f9121026cfbe3b4fbe6dfc76c",
+    "scripts/extract_ckd_transitions.py": "8542cf739ee7906bd72518c01f8e00bb01c6109a3df12e720c6558e3e3d787c9",
+    "scripts/extract_cms_price.py": "c0b4441eaa7eaac1855ba82d453fcd19edf14b2820ab1d0f71d7afe11b40ddcd",
+    "sql/cohort.sql": "9bc981ac6ce2f8a2cd0b6b510e8c02dfa985164cf4d59e8065b1e89fd6328425",
+    "tests/test_model.py": "d0e02b36b20794cb8687d0ccc228c9c3fc7ced1d6ec8754adf88f757524c110e",
+    "tests/test_transitions.py": "4ded0df069bc086c9ccc8b8e7e25b5adcadf8c311a33ec984362851b4c8b4113"
+  },
+  "seeds": {
+    "psa": 20261011,
+    "causal_mc": 20261011,
+    "claims": 711
+  },
+  "mode": "full",
+  "outputs": {
+    "REPORT.md": "c4acb6dedc3c6ade0e3a8e313065c2fc8b61d900b2534dd58ccbbadc2a5ef0e5",
+    "acceptability.csv": "2e73ac95183d20b514f16cb394e30de830fa8629ab9de367863c5fe5a2149f68",
+    "budget-annual.csv": "4fb1e20a7fb975489abb862fc07c7fa59b46d826e26776401df5cee61b40e3c8",
+    "budget-impact.png": "0be244f514a6ba72ef9a2bb1a7429ec5110483658d05eeba9d3f817115832841",
+    "budget-monthly-current.csv": "dffc83828a9c352ad1bc3fc9561e4955b21d31495253c4bdeffb3ed3a9ad9337",
+    "budget-monthly-expanded.csv": "f2e9e54d635851a8abb2c274b0d68cac166e2f91e656864326ff674cf62835dc",
+    "budget-sensitivity.csv": "88d5e8c1b73f642cbb7c0f04ab55d2e26190fa63c34a977e49678a6a97bebef4",
+    "causal-diagnostics.png": "1a66ca324a94e54ef80627f0653778a5c5ccaba9d9e5a90336229658cf15467a",
+    "causal-replicates.csv": "47624a19a64a229b980cdcc76ce8aaf1fb30c94740c4c0fab2f1818c5f45bfc0",
+    "causal-summary.json": "dc93e36e13610ee67d2e041aa218e9caa192cfb3bd1157c65fa489fcea758ab7",
+    "cea-trace-control.csv": "c51b20cf5f8feb2b4d4915a8f7457397d1bbc9d18585a1a318c3daff36b07f58",
+    "cea-trace-dapa.csv": "f00e4570af1636aa8118b59d69675186c083e38c42c3f81a7ac20d096515a3bb",
+    "cea.json": "ec5c6feebc1b6c8b7e3fa5e2738b98a6de296893aec87b1f120bcec9e4a6ab9f",
+    "claims-demo.json": "8aca424d5d0e5de54816d7bf036ed3dbaed16b2c1d8a16dee6805fd2ee00a268",
+    "economic-trajectories.png": "349a0148a4fd85047a14307aee42e96980fe079e9cfcea16c0686dbc15a12d38",
+    "psa-draws.csv": "658ed09d2cac4687d8548b348e4c562efde0b0621ccf8827080d913535cd8398",
+    "sensitivity.csv": "410aac08f42eeb09046b3d1cddd8f58b8252072b5326936dc8fa06242edc120f",
+    "transition-input-audit.json": "6981c99841dd8aa60176c0204ea9d15ef090bdaa072ac3fc87882f01530f2113",
+    "uncertainty.png": "5608d93cdb881b50344371c9105d1488ccba7f49dfd96fbbddb67666173315cc",
+    "validation.json": "fb22d710fec88f5f49f088ebd14f6b779fc82c6a8d7addbf1e1c038923a9e4e9"
+  }
+}

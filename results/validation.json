@@ -1,0 +1,14 @@
+{
+  "dapa_cost_reconciliation_error": 0.0,
+  "control_cost_reconciliation_error": 2.9103830456733704e-11,
+  "test_suite_passed": true,
+  "sql_cohort_reconstructed": true,
+  "synthetic_estimates_used_as_clinical_inputs": false,
+  "clinical_validation": "NOT established: mixed-population matrices, assumed mortality/transport and cost allocations.",
+  "trial_composite_validation": "Not identified from stage-only aggregates; no counterfeit composite HR calibration.",
+  "lifetime": "Exploratory sensitivity capped at age100; not a validated lifetime forecast.",
+  "mode": "full",
+  "psa_draws": 1000,
+  "monte_carlo_replicates_per_scenario": 200,
+  "reference_max_abs_error": 0.0
+}
