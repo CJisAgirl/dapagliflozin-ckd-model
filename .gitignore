@@ -12,8 +12,3 @@ __pycache__/
 *.sqlite3
 *.zip
 results/quick/
-sas/output/
-*.sas7bdat
-*.sas7bcat
-*.log
-*.lst
