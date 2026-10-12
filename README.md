@@ -26,6 +26,7 @@ The saved full run includes **1,000 probabilistic sensitivity-analysis draws** a
 | Synthetic claims | Enrollment, diagnoses, linked laboratory results, prescriptions and outcomes; SQL new-user cohort construction |
 | Causal methods | IPTW and IPCW, competing death, bootstrap intervals and repeated known-truth simulation |
 | Quality control | Source fingerprints, transition checks, cohort accounting, independent cashflow reconciliation and automated tests |
+| SAS replication | Base SAS reference CEA implementation and budget aggregation checks; SAS execution and cross-software agreement pending |
 
 ![Budget impact components](results/budget-impact.png)
 
@@ -44,6 +45,7 @@ The synthetic comparison uses dapagliflozin versus sitagliptin, while the econom
 | [Sources](SOURCES.md) and [parameters](parameters/) | Public evidence, transformations and scenario assumptions |
 | [Model](model/) and [SQL](sql/cohort.sql) | Economic calculations, simulation and cohort construction |
 | [Tests](tests/) and [validation](results/validation.json) | Computational checks and reproducibility records |
+| [SAS](sas/) | Reference economic replication code, public input bundle and SAS Studio instructions |
 
 ## Reproduce
 
@@ -65,3 +67,5 @@ The default model uses the saved public-source parameters offline. `python run.p
 ## Methods demonstrated
 
 Health economic modelling, evidence synthesis, parameter provenance, scenario analysis, SQL cohort construction, longitudinal data handling, causal inference diagnostics and reproducible computational validation.
+
+The optional [SAS module](sas/README.md) adds DATA step arrays, PROC SQL and PROC COMPARE code. It has not yet been executed in SAS and is not included in the verified Python results above.
