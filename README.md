@@ -2,9 +2,11 @@
 
 **Cost effectiveness, budget impact and synthetic claims methods | Python and SQL**
 
-A reproducible health economic modelling project examining dapagliflozin added to standard care for a hypothetical population with type 2 diabetes and chronic kidney disease. It combines a monthly cohort model, an open-population budget model and uncertainty analysis using published kidney-function transitions, US public spending references and Medicare drug-price scenarios.
+A reproducible health economic modelling project examining dapagliflozin added to standard care for a hypothetical population with type 2 diabetes and chronic kidney disease. A nine-state cohort model uses monthly cycles for a 10-year reference cost-effectiveness analysis, alongside a three-year open-population budget-impact model. Inputs combine published kidney-function transitions, US public spending references and Medicare drug-price scenarios.
 
 A separate synthetic longitudinal-data module evaluates causal estimation under measured confounding, informative censoring, unmeasured confounding and lack of treatment overlap. Its treatment effects are generated for method evaluation and do not enter the economic model.
+
+The saved full run includes **1,000 probabilistic sensitivity-analysis draws** and **800 causal simulation replicates across four scenarios** (200 per scenario). These counts describe completed computational work; the economic findings remain conditional on the documented assumptions.
 
 [Read the results](results/REPORT.md) · [Methods](METHODS.md) · [Sources and assumptions](SOURCES.md)
 
