@@ -1,0 +1,16 @@
+{
+  "source_sha256": {
+    "parameters/scenario.json": "be4835d78a5c7b0107858ad166b976594e9527ae3c1ab95be41ae7f1175c2337",
+    "parameters/ckd-transitions-source.json": "12017727b3e158dbab5bdeb5a7eb000b3626ffa0a32bad3dac74bf0b3383c642",
+    "results/cea.json": "ec5c6feebc1b6c8b7e3fa5e2738b98a6de296893aec87b1f120bcec9e4a6ab9f",
+    "results/budget-annual.csv": "4fb1e20a7fb975489abb862fc07c7fa59b46d826e26776401df5cee61b40e3c8",
+    "results/budget-monthly-current.csv": "dffc83828a9c352ad1bc3fc9561e4955b21d31495253c4bdeffb3ed3a9ad9337",
+    "results/budget-monthly-expanded.csv": "f2e9e54d635851a8abb2c274b0d68cac166e2f91e656864326ff674cf62835dc"
+  },
+  "program_sha256": "55e2bb67927e1c28300584e308ac1ec3f2751609ad5db1b2b8fb953785a6d314",
+  "bundle_id": "27be29209e0e27c695145398713796924993615230b56b09c94a792b18466b2a",
+  "bundle_sha256": "caf6ebec2c826cc013daaf1a0ca9a6b8eed49e935a346bfc97ef463e6e1c9580",
+  "status": "inputs_prepared_not_SAS_execution",
+  "cea_reference_values": 20,
+  "budget_reference_values": 36
+}

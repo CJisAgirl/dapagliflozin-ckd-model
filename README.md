@@ -44,6 +44,7 @@ The synthetic comparison uses dapagliflozin versus sitagliptin, while the econom
 | [Sources](SOURCES.md) and [parameters](parameters/) | Public evidence, transformations and scenario assumptions |
 | [Model](model/) and [SQL](sql/cohort.sql) | Economic calculations, simulation and cohort construction |
 | [Tests](tests/) and [validation](results/validation.json) | Computational checks and reproducibility records |
+| [Complete SAS program](sas/run_project.sas) | Embedded inputs, reference CEA calculations and budget aggregation checks |
 
 ## Reproduce
 
@@ -61,6 +62,12 @@ python run.py
 The runner executes tests, economic scenarios, uncertainty analysis, synthetic-data estimation and repeated simulations, then generates figures and the English report. The full run can take several minutes. Successful completion prints the path to `results/REPORT.md`.
 
 The default model uses the saved public-source parameters offline. `python run.py --verify-sources` also downloads and checks the pinned CMS and publication source files. `python run.py --quick` writes a smaller diagnostic run under `results/quick/` without overwriting the reference results. Synthetic individual records are generated locally under `data/` and excluded from version control. No R installation, API key or licensed patient database is required.
+
+## SAS program
+
+Open [the complete single-file SAS program](sas/run_project.sas), copy the entire file into SAS Studio and run it. Parameters and reference inputs are embedded; no path editing or separate input upload is needed. It implements the reference CEA and checks annual budget aggregation. The PSA and synthetic causal simulations remain in Python. See [SAS instructions](sas/README.md) for outputs and comparison checks.
+
+**SAS execution is pending.** The code and input/export checks are available, but numerical agreement with Python has not yet been verified in a SAS runtime.
 
 ## Methods demonstrated
 
