@@ -31,9 +31,9 @@ The saved full run includes **1,000 probabilistic sensitivity-analysis draws** a
 
 ## Scope
 
-The economic outputs are exploratory scenarios. Published renal transitions come from a mixed diabetes-status population; mortality, parts of costing, initial population composition and transfer to the target setting remain assumptions. The model has not been clinically calibrated or externally validated for a US diabetes population. Price inputs are Medicare negotiated-price references, not observed net payer costs.
+The economic outputs are exploratory scenarios. Published renal transitions come from a mixed diabetes-status population; mortality, parts of costing, initial population composition and transfer to the target setting remain assumptions. Interpretation for a specific US diabetes population depends on the applicability of these transferred inputs and assumed risks. Price inputs are Medicare negotiated-price references, not observed net payer costs.
 
-The synthetic comparison uses dapagliflozin versus sitagliptin, while the economic model compares dapagliflozin plus standard care with standard care. These comparisons are distinct. Artificial records and simplified clinical labels are not real claims evidence or validated clinical phenotypes.
+The synthetic comparison uses dapagliflozin versus sitagliptin, while the economic model compares dapagliflozin plus standard care with standard care. These comparisons are distinct. Artificial records and simplified clinical labels are generated for estimator evaluation rather than patient care or clinical effect estimation.
 
 ## Repository
 

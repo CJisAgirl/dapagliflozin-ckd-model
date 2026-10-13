@@ -51,5 +51,51 @@
     "transition-input-audit.json": "6981c99841dd8aa60176c0204ea9d15ef090bdaa072ac3fc87882f01530f2113",
     "uncertainty.png": "5608d93cdb881b50344371c9105d1488ccba7f49dfd96fbbddb67666173315cc",
     "validation.json": "fb22d710fec88f5f49f088ebd14f6b779fc82c6a8d7addbf1e1c038923a9e4e9"
+  },
+  "computation_commit": "12d01b229c2faf78ed5cea8e5cd71f8aa1329312",
+  "presentation_refresh": {
+    "at": "2026-10-13T16:38:59.008118+00:00",
+    "scope": "English presentation and scope descriptions; reports and figures regenerated from saved aggregate outputs.",
+    "numerical_result_tables": "unchanged",
+    "input_sha256": {
+      "parameters/ckd-transitions-source.json": "b7fd33389f0a28c6bb604dd0349b7d66f9b0f9554bfcec786b5caa83544619c5",
+      "parameters/cms-price-evidence.json": "a33f43d08b3f4752aed5c8560a483124a91e1a130806165b51d3e5a069200789",
+      "parameters/computational-reference.json": "3159f093c046dc08fdda52b829b86762ec1e3e911ffea6be8575b0c7984a37b7",
+      "parameters/scenario.json": "60dc4c5a3c0917047022bb2ee466cf0feccdfeb51d61ac34d75ae56edcef4591",
+      "parameters/us-cost-source.json": "2495e168b626df83d92cb630a6bacdddf90d018db0f59ea244b7ae23a18b9a92"
+    },
+    "code_sha256": {
+      "model/claims.py": "aeab96d828a50382e808f98a08868d24f43f64911fc356bd0ab7be45e41cc946",
+      "model/economics.py": "70c82c165a109942ea60fe3903f8528b7b6c652716a831d932a6d73988bc394e",
+      "model/reporting.py": "4043a340ead51be331acb3898754307a76190a3e19d11d5a7a806639754f5a08",
+      "run.py": "82fc7aa6387b474ea002de061b21bdefe2ac10c966645802c0fb27ab1263757d",
+      "scripts/extract_ckd_transitions.py": "84c2ac65cc03b745dac83df34313eb6b83ba909695b85cd73bf9c9ba31037bfd",
+      "scripts/extract_cms_price.py": "c0b4441eaa7eaac1855ba82d453fcd19edf14b2820ab1d0f71d7afe11b40ddcd",
+      "sql/cohort.sql": "9bc981ac6ce2f8a2cd0b6b510e8c02dfa985164cf4d59e8065b1e89fd6328425",
+      "tests/test_model.py": "d0e02b36b20794cb8687d0ccc228c9c3fc7ced1d6ec8754adf88f757524c110e",
+      "tests/test_transitions.py": "d30e5f1fa0c2de0fbe502f57b71128ab1dfdcb6558f91010956ae2f93c71e22a"
+    },
+    "outputs": {
+      "REPORT.md": "b6f2da374936708fbd90660e5b35a7ef2e72a58d363bc6061faf8fc5996a6838",
+      "acceptability.csv": "2e73ac95183d20b514f16cb394e30de830fa8629ab9de367863c5fe5a2149f68",
+      "budget-annual.csv": "4fb1e20a7fb975489abb862fc07c7fa59b46d826e26776401df5cee61b40e3c8",
+      "budget-impact.png": "0be244f514a6ba72ef9a2bb1a7429ec5110483658d05eeba9d3f817115832841",
+      "budget-monthly-current.csv": "dffc83828a9c352ad1bc3fc9561e4955b21d31495253c4bdeffb3ed3a9ad9337",
+      "budget-monthly-expanded.csv": "f2e9e54d635851a8abb2c274b0d68cac166e2f91e656864326ff674cf62835dc",
+      "budget-sensitivity.csv": "88d5e8c1b73f642cbb7c0f04ab55d2e26190fa63c34a977e49678a6a97bebef4",
+      "causal-diagnostics.png": "1a66ca324a94e54ef80627f0653778a5c5ccaba9d9e5a90336229658cf15467a",
+      "causal-replicates.csv": "47624a19a64a229b980cdcc76ce8aaf1fb30c94740c4c0fab2f1818c5f45bfc0",
+      "causal-summary.json": "dc93e36e13610ee67d2e041aa218e9caa192cfb3bd1157c65fa489fcea758ab7",
+      "cea-trace-control.csv": "c51b20cf5f8feb2b4d4915a8f7457397d1bbc9d18585a1a318c3daff36b07f58",
+      "cea-trace-dapa.csv": "f00e4570af1636aa8118b59d69675186c083e38c42c3f81a7ac20d096515a3bb",
+      "cea.json": "ec5c6feebc1b6c8b7e3fa5e2738b98a6de296893aec87b1f120bcec9e4a6ab9f",
+      "claims-demo.json": "8aca424d5d0e5de54816d7bf036ed3dbaed16b2c1d8a16dee6805fd2ee00a268",
+      "economic-trajectories.png": "ee4cfb5c50debc662dc25aa036cd1f86ccb39bfd2da9b10935739ab0a7ef34e2",
+      "psa-draws.csv": "658ed09d2cac4687d8548b348e4c562efde0b0621ccf8827080d913535cd8398",
+      "sensitivity.csv": "410aac08f42eeb09046b3d1cddd8f58b8252072b5326936dc8fa06242edc120f",
+      "transition-input-audit.json": "610a427190509683f1738822eab2cfc8f7cd69bc3ba1d425eb7c1b518c6953c3",
+      "uncertainty.png": "5608d93cdb881b50344371c9105d1488ccba7f49dfd96fbbddb67666173315cc",
+      "validation.json": "e95ff4256bd0698eaeecad3a00e76aa142b95eb1e51dfc30f102553adc65d9df"
+    }
   }
 }

@@ -1,6 +1,6 @@
 # Dapagliflozin in CKD economic and causal methods project
 
-**Completed computational project; exploratory economic scenarios and synthetic methods validation. Not a validated T2D or Medicare decision model.** Evidence review 11 October 2026. The reference horizon is 10 years; age-100 extrapolation is a sensitivity scenario only.
+**Exploratory cost-effectiveness and budget-impact scenarios with a separate synthetic causal-methods study.** Evidence review 11 October 2026. The reference horizon is 10 years; age-100 extrapolation is a sensitivity scenario only.
 
 ## Decision and economic output
 
@@ -8,7 +8,7 @@ Dapagliflozin 10 mg daily plus standard care versus standard care without an SGL
 
 Reference incremental cost: $6,024; incremental QALYs: 0.142950; classification: more effective, more costly; ICER: $42,143/QALY; incremental NMB at $100,000/QALY: $8,271. Conditional daily drug-price threshold: $9.7702.
 
-These figures must be read with the scenario register: mixed-population renal matrices were not calibrated to a T2D-specific endpoint; stage mortality and age extrapolation are assumptions, utilities use a transferred UK tariff, and spending uses adjusted US proxies. Full healthcare-sector and actual insurer net costs are not estimated.
+These figures must be read with the scenario register: renal matrices are transferred from a mixed diabetes-status population; stage mortality and age extrapolation are assumptions, utilities use a transferred UK tariff, and spending uses adjusted US proxies. Full healthcare-sector and actual insurer net costs are not estimated.
 
 ![Modelled survival and kidney replacement therapy](economic-trajectories.png)
 
@@ -36,10 +36,10 @@ Bootstrap samples with complete censoring in a treatment-stratum cell are also u
 
 ## Validation and limits
 
-Independent discounted cashflow recomputation agrees within1e-6USD; matrix mass conservation, absorbing death, identity scenarios, analytic survival, no-treatment budget, open-population accounting and SQL exclusions are tested. These are computational checks, not clinical validation. No calibration to the DAPA-CKD composite is claimed because stage aggregates cannot identify its sustained decline and adjudicated death components. The lifetime scenario is not evidence of valid extrapolation.
+Independent discounted cashflow recomputation agrees within1e-6USD; matrix mass conservation, absorbing death, identity scenarios, analytic survival, no-treatment budget, open-population accounting and SQL exclusions are tested. These checks assess computational implementation and accounting. Stage aggregates cannot identify the sustained decline and adjudicated death components of the DAPA-CKD composite. The age-100 scenario depends on the stated extrapolation assumptions.
 
 Public source tables are preserved separately from normalization and assumptions. PSA samples selected subjective distributions; its acceptance curve is conditional on those choices, with no claim to a recovered trial joint distribution. No separate HF benefit, transplant incident cost, or observed adverse-event effect is claimed. Source totals include mixed medical/pharmacy components; an assumed20% pharmacy subtraction and3% annual2023–2026 conversion create background medical proxies. KRT transplant costs represent prevalent averages; dialysis cost is an explicit scenario. Drug MFP is not net payer liability.
 
 ![Uncertainty under selected parameter distributions](uncertainty.png)
 
-See [methods](../METHODS.md), [sources](../SOURCES.md),[parameter register](../parameters/scenario.json),[validation](validation.json) and[run manifest](run-manifest.json). Independent exploratory analysis; not endorsed by the cited agencies or manufacturers.
+See [methods](../METHODS.md), [sources](../SOURCES.md),[parameter register](../parameters/scenario.json),[validation](validation.json) and[run manifest](run-manifest.json).

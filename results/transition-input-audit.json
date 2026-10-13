@@ -1,5 +1,5 @@
 {
-  "status": "source_transcription_checked_not_clinical_model_validation",
+  "status": "source_transcription_integrity_checked",
   "matrices": 4,
   "probability_cells": 256,
   "se_cells": 256,

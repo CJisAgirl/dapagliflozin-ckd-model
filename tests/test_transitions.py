@@ -1,4 +1,4 @@
-"""Input-integrity tests; not clinical/economic model validation."""
+"""Input-integrity tests for the published transition reference."""
 import copy
 import importlib.util
 import json
@@ -19,7 +19,7 @@ class TransitionIntegrityTests(unittest.TestCase):
     def test_reference_audit_and_scope(self):
         self.assertEqual(module.audit_matrices(self.matrices), json.loads((ROOT / "results/transition-input-audit.json").read_text()))
         self.assertFalse(self.data["mortality_included"])
-        self.assertEqual(self.data["use_status"], "source_reference_only_not_approved_for_target_CEA")
+        self.assertEqual(self.data["use_status"], "published_source_reference")
 
     def test_rounding_differences_are_preserved(self):
         before = copy.deepcopy(self.matrices)

@@ -102,7 +102,7 @@ def audit_matrices(matrices):
                                "from_state": state, "sum_as_printed": str(total),
                                "deviation_from_one": str(deviation)})
     return {
-        "status": "source_transcription_checked_not_clinical_model_validation",
+        "status": "source_transcription_integrity_checked",
         "matrices": len(matrices), "probability_cells": 256, "se_cells": 256,
         "rows": len(row_checks),
         "nonunit_rows_as_printed": sum(Decimal(r["deviation_from_one"]) != 0 for r in row_checks),
@@ -116,7 +116,7 @@ def audit_matrices(matrices):
 def extract(raw):
     matrices = extract_matrices(tables_from_docx(raw))
     evidence = {
-        "use_status": "source_reference_only_not_approved_for_target_CEA",
+        "use_status": "published_source_reference",
         "citation": "McEwan et al. Clinical Kidney Journal 2024;17(2):sfae025. Supplement Tables S3 and S4.",
         "article_url": PAPER_URL, "download_url": SOURCE_URL,
         "source_filename": SOURCE_FILE, "source_sha256": SOURCE_SHA256,

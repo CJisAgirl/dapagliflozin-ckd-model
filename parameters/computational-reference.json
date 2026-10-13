@@ -1,5 +1,5 @@
 {
-  "status": "computational_repeatability_only_not_external_validation",
+  "status": "computational_repeatability_reference",
   "cea": {
     "delta_cost": 6024.327109915554,
     "delta_qaly": 0.1429503254843425,

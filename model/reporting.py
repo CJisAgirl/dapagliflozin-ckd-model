@@ -15,7 +15,7 @@ def plots(out,r,tr,bia,sens,draws,ceac,demo,summary):
         ax[1].plot(f.month/12,f.Dialysis+f.Transplant,label=label,color=color)
     for a in ax:a.set_xlabel('Years');a.set_ylabel('Cohort proportion');a.set_ylim(bottom=0);a.legend(fontsize=8)
     ax[0].set_title('Survival under assumed mortality');ax[1].set_title('Current kidney replacement therapy occupancy')
-    fig.suptitle('Exploratory scenario — not T2D clinical validation',fontsize=12)
+    fig.suptitle('Exploratory CKD scenario under specified assumptions',fontsize=12)
     fig.savefig(out/'economic-trajectories.png');plt.close(fig)
     b=pd.DataFrame(bia);fig,ax=plt.subplots(figsize=(8,4.4),layout='constrained');x=np.arange(3)
     ax.bar(x-.22,b.incremental_drug/1e6,.22,label='Added drug cost',color='#298a91')
@@ -52,7 +52,7 @@ def write_reports(out,cfg,r,bia,sens,demo,summary,ceac,audit):
     rows='\n'.join(f"| {x['year']} | {money(x['incremental_drug'])} | {money(x['incremental_medical'])} | {money(x['incremental_total'])} | ${x['pmpm']:.3f} |" for x in bia)
     en=f'''# Dapagliflozin in CKD economic and causal methods project
 
-**Completed computational project; exploratory economic scenarios and synthetic methods validation. Not a validated T2D or Medicare decision model.** Evidence review 11 October 2026. The reference horizon is 10 years; age-100 extrapolation is a sensitivity scenario only.
+**Exploratory cost-effectiveness and budget-impact scenarios with a separate synthetic causal-methods study.** Evidence review 11 October 2026. The reference horizon is 10 years; age-100 extrapolation is a sensitivity scenario only.
 
 ## Decision and economic output
 
@@ -60,7 +60,7 @@ Dapagliflozin 10 mg daily plus standard care versus standard care without an SGL
 
 Reference incremental cost: {money(r['delta_cost'])}; incremental QALYs: {r['delta_qaly']:.6f}; classification: {r['classification']}; ICER: {ic}; incremental NMB at $100,000/QALY: {money(r['nmb_at_100k'])}. Conditional daily drug-price threshold: ${r['daily_price_threshold_at_100k']:.4f}.
 
-These figures must be read with the scenario register: mixed-population renal matrices were not calibrated to a T2D-specific endpoint; stage mortality and age extrapolation are assumptions, utilities use a transferred UK tariff, and spending uses adjusted US proxies. Full healthcare-sector and actual insurer net costs are not estimated.
+These figures must be read with the scenario register: renal matrices are transferred from a mixed diabetes-status population; stage mortality and age extrapolation are assumptions, utilities use a transferred UK tariff, and spending uses adjusted US proxies. Full healthcare-sector and actual insurer net costs are not estimated.
 
 ![Modelled survival and kidney replacement therapy](economic-trajectories.png)
 
@@ -86,12 +86,12 @@ Bootstrap samples with complete censoring in a treatment-stratum cell are also u
 
 ## Validation and limits
 
-Independent discounted cashflow recomputation agrees within1e-6USD; matrix mass conservation, absorbing death, identity scenarios, analytic survival, no-treatment budget, open-population accounting and SQL exclusions are tested. These are computational checks, not clinical validation. No calibration to the DAPA-CKD composite is claimed because stage aggregates cannot identify its sustained decline and adjudicated death components. The lifetime scenario is not evidence of valid extrapolation.
+Independent discounted cashflow recomputation agrees within1e-6USD; matrix mass conservation, absorbing death, identity scenarios, analytic survival, no-treatment budget, open-population accounting and SQL exclusions are tested. These checks assess computational implementation and accounting. Stage aggregates cannot identify the sustained decline and adjudicated death components of the DAPA-CKD composite. The age-100 scenario depends on the stated extrapolation assumptions.
 
 Public source tables are preserved separately from normalization and assumptions. PSA samples selected subjective distributions; its acceptance curve is conditional on those choices, with no claim to a recovered trial joint distribution. No separate HF benefit, transplant incident cost, or observed adverse-event effect is claimed. Source totals include mixed medical/pharmacy components; an assumed20% pharmacy subtraction and3% annual2023–2026 conversion create background medical proxies. KRT transplant costs represent prevalent averages; dialysis cost is an explicit scenario. Drug MFP is not net payer liability.
 
 ![Uncertainty under selected parameter distributions](uncertainty.png)
 
-See [methods](../METHODS.md), [sources](../SOURCES.md),[parameter register](../parameters/scenario.json),[validation](validation.json) and[run manifest](run-manifest.json). Independent exploratory analysis; not endorsed by the cited agencies or manufacturers.
+See [methods](../METHODS.md), [sources](../SOURCES.md),[parameter register](../parameters/scenario.json),[validation](validation.json) and[run manifest](run-manifest.json).
 '''
     (out/'REPORT.md').write_text(en)

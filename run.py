@@ -52,9 +52,9 @@ def main():
         err=abs(independent-r[arm]['cost']);assert err<1e-6
         audit[arm+'_cost_reconciliation_error']=err
     audit.update({'test_suite_passed':True,'sql_cohort_reconstructed':True,'synthetic_estimates_used_as_clinical_inputs':False,
-       'clinical_validation':'NOT established: mixed-population matrices, assumed mortality/transport and cost allocations.',
-       'trial_composite_validation':'Not identified from stage-only aggregates; no counterfeit composite HR calibration.',
-       'lifetime':'Exploratory sensitivity capped at age100; not a validated lifetime forecast.',
+       'clinical_validation':'Exploratory scenario using mixed-population matrices, assumed mortality, evidence transfer and cost allocations.',
+       'trial_composite_validation':'Stage aggregates do not identify sustained-decline or adjudicated-death components of the trial composite.',
+       'lifetime':'Exploratory sensitivity capped at age100, conditional on extrapolated transition and mortality assumptions.',
        'mode':'quick' if args.quick else 'full','psa_draws':len(draws),'monte_carlo_replicates_per_scenario':5 if args.quick else 200})
     reference=ROOT/'parameters/computational-reference.json'
     if reference.exists():

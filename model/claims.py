@@ -109,7 +109,7 @@ def simulate_methods(repetitions=200,n=2500,bootstrap=100,seed=20261011):
     return records,summaries
 
 def make_database(path,df):
-    """Flat toy code sets and labs are explicit; not validated clinical phenotypes."""
+    """Explicit toy code sets and linked labs for synthetic method evaluation."""
     conn=sqlite3.connect(path)
     for name in ['enrollment','diagnoses','labs','fills','events']:
         conn.execute(f'DROP TABLE IF EXISTS {name}')
